@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <div id="instructions">
+        <p id="text1">How to Play: Arrange the tiles from 1 to 15 by clicking them to slide 
+            into the empty space. Click 'Shuffle' to start the game!
+        </p>
+    
+    </div>
+    <div id="board-size-selection">
+        <label for="board-size">Board Size:</label>
+        <select id="board-size">
+            <option value="2">2x2</option>
+            <option value="3">3x3</option>
+            <option value="4" selected>4x4</option>
+            <option value="6">6x6</option>
+            <option value="8">8x8</option>
+        </select>
+        <button id="shuffle-button">Shuffle</button>
+    </div>
+    <div id="image-selection">
+        <label for="image-select">Choose an Image:</label>
+        <select id="image-select">
+            <option value="background.png">Image 1</option>
+            <option value="background2.png">Image 2</option>
+            <option value="background3.png">Image 3</option>
+            <option value="background4.png">Image 4</option>
+        </select>
+    </div>
+    <div id="puzzle-container"></div>
+    <script src="fifteen.js"></script>
+    <p id="text2">
+        American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed,
+        Loyd claimed from 1891 until his death in 1911 that he invented it. The puzzle was actually created around
+        1784 by Noyes Palmer Chapman, a postmaster in Canastota, New York.
+    </p>
+</body>
+</html>
